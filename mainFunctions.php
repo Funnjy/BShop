@@ -1,11 +1,17 @@
 <?php
   /*Følgende funksjon skal koble mot databasen*/
+
   function dbConnect (){
     //Cobler mot databasen.
     $dbhost = 'localhost';
-  	$dbuser = 'admin';
-  	$dbpass = 'admin';
-  	$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+    $dbuser = 'admin';
+    $dbpass = 'admin';
+    $conn = mysql_connect($dbhost, $dbuser, $dbpass);
+    if(!$conn){
+      die('Could not connect to DB'.mysql_error());
+    }
+    mysql_select_db('bread_shop');
+
   }
 
   /*Følgende funksjon skal lukke koblingen mot databasen.*/

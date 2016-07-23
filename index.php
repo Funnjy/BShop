@@ -13,13 +13,16 @@
 	<meta charset="UTF-8">
 </head>
 <body>
-	<div class="container">
-		<p>Velkommen til "BShop" versjon 0.0.1. Vennligst velg "Employer" hvis du skal oppdatere bestillinger. </p>
-		<p>Velg "Costumer" hvis du skal bestille brød eller lage en ny bruker i vår system. </p>
-	</div>
 	<div>
-		<button type="submit">Employer</button>
-		<button type="submit">Costumer</button>
+		<p>Velkommen til "BShop" versjon 0.0.1. Vennligst velg "Employer" hvis du skal oppdatere bestillinger. </p>
+		<form action="employer.php">
+			<button type="submit">Employer</button>
+		</form>
+
+		<p>Velg "Costumer" hvis du skal bestille brød eller lage en ny bruker i vår system. </p>
+		<form action="costumer.php">
+			<button type="submit" action="costumer.php">Costumer</button>
+		</form>
 	</div>
 </body>
 </html>
